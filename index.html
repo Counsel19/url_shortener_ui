@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .w-frame {
+          max-width: 1279px;
+          width: min(95%, 1279px);
+          margin-inline: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="overflow-hidden">
+    <div>
+      <nav
+        class="flex items-center justify-between w-frame py-8 text-slate-600"
+      >
+        <div class="flex items-center gap-8">
+          <a href="">
+            <img src="./images/logo.svg" alt="Logo" />
+          </a>
+
+          <ul class="flex gap-6">
+            <li>
+              <a class="hover:text-black" href="">Features</a>
+            </li>
+            <li>
+              <a class="hover:text-black" href="">Pricing</a>
+            </li>
+            <li>
+              <a class="hover:text-black" href="">Resources</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex gap-4 items-center">
+          <a href="/login"> Login </a>
+          <a
+            class="bg-teal-500 grid place-content-center font-semibold rounded-[1.4rem] py-3 px-5 text-white"
+            href="/signup"
+          >
+            Sign Up
+          </a>
+        </div>
+      </nav>
+
+      <section class="relative w-frame h-[70vh] flex items-center">
+        <div class="max-w-[50%] ">
+          <h3 class="text-[4rem] leading-[4.2rem] font-bold">
+            More than just shorter links
+          </h3>
+          <p class="text-slate-600 text-2xl mb-8">
+            Build your brand&apos;s recognition and get detailed insights on how
+            your links are performing.
+          </p>
+          <a
+            class="bg-teal-500  grid place-content-center font-semibold rounded-[1.4rem] py-3 px-6 text-2xl  text-white w-fit"
+            href="/"
+          >
+            Get Started
+          </a>
+        </div>
+
+        <div class="absolute -right-[10%] h-full w-[50%]">
+          <img
+            class="h-full w-full object-contain"
+            src="./images/illustration-working.svg"
+            alt="Illustration"
+          />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
